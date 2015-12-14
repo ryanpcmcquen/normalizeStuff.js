@@ -1,4 +1,4 @@
-/* normalizeHeights.js v0.1.0 by ryanpcmcquen */
+/* normalizeHeights.js v0.1.1 by ryanpcmcquen */
 /*jslint browser:true, white:true*/
 /*global window*/
 
@@ -24,7 +24,7 @@
     elementArray.map(function(i) {
       i.style.height = maxElementHeight + "px";
     });
-  }
+  };
   // attach globally
   window.normalizeHeights = normalizeHeights;
 }());
