@@ -5,11 +5,18 @@ Call it like so:
 
 ```javascript
 window.addEventListener('load', function() {
-  normalizeHeights('.icon-img-card', 220)
+  normalizeHeights('.foo', 220);
 });
 ```
 
 The first argument is the `elementSelector`, and the second argument (which is *optional*), is `height`. If you don't feed a `height` argument, [normalizeHeights.js](https://github.com/ryanpcmcquen/normalizeHeights.js) will apply the *tallest* height to all elements.
+
+No `height` example:
+```javascript
+window.addEventListener('load', function() {
+  normalizeHeights('.foo-bar');
+});
+```
 
 You can add **normalizeHeights.js** using RawGit CDN:
 
