@@ -14,7 +14,7 @@ The first argument is the `elementSelector`, and the second argument (which is *
 You can add **normalizeHeights.js** using RawGit CDN:
 
 ```html
-<script src="https://cdn.rawgit.com/ryanpcmcquen/normalizeHeights.js/07e3cf809a843da1055e8700b51cce7be582c079/normalizeHeights.min.js"></script>
+<script src="https://cdn.rawgit.com/ryanpcmcquen/normalizeHeights.js/c529574fa2216c51296cd433755ec167a1ae3e43/normalizeHeights.min.js"></script>
 ```
 
-https://cdn.rawgit.com/ryanpcmcquen/normalizeHeights.js/07e3cf809a843da1055e8700b51cce7be582c079/normalizeHeights.min.js
+https://cdn.rawgit.com/ryanpcmcquen/normalizeHeights.js/c529574fa2216c51296cd433755ec167a1ae3e43/normalizeHeights.min.js
