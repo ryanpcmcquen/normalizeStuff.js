@@ -1,16 +1,21 @@
-/* normalizeHeights.js v0.1.1 by ryanpcmcquen */
+/* normalizeStuff.js v0.2.0 by ryanpcmcquen */
+
 /*jslint browser:true, white:true*/
 /*global window*/
 
-(function() {
+(function () {
+
   'use strict';
-  var normalizeHeights = function(elementSelector, height) {
+
+  var normalizeStuff;
+
+  normalizeStuff.heights = function (elementSelector, height) {
     var elementArray = Array.prototype.slice.call(document.querySelectorAll(elementSelector)),
       maxElementHeight;
     if (!height) {
       // no height was defined, calculate tallest height
       var elementHeightArray = [];
-      elementArray.map(function(i) {
+      elementArray.map(function (i) {
         elementHeightArray.push(i.clientHeight);
       });
 
@@ -21,10 +26,34 @@
       maxElementHeight = height;
     }
     // apply that height to all elements
-    elementArray.map(function(i) {
+    elementArray.map(function (i) {
       i.style.height = maxElementHeight + "px";
     });
   };
+
+  normalizeStuff.widths = function (elementSelector, width) {
+    var elementArray = Array.prototype.slice.call(document.querySelectorAll(elementSelector)),
+      maxElementWidth;
+    if (!width) {
+      // no width was defined, calculate greatest width
+      var elementWidthArray = [];
+      elementArray.map(function (i) {
+        elementWidthArray.push(i.clientWidth);
+      });
+
+      // get the greatest width
+      maxElementWidth = Math.max.apply(Math, elementWidthArray);
+    } else {
+      // specific width defined
+      maxElementWidth = width;
+    }
+    // apply that width to all elements
+    elementArray.map(function (i) {
+      i.style.width = maxElementWidth + "px";
+    });
+  };
+
   // attach globally
-  window.normalizeHeights = normalizeHeights;
+  window.normalizeStuff = normalizeStuff;
+
 }());
