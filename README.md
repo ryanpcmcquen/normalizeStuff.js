@@ -40,7 +40,7 @@ As with `normalizeStuff.heights()`, there is a second *optional* argument that c
 You can add **normalizeStuff.min.js** using RawGit CDN:
 
 ```html
-<script src="https://cdn.rawgit.com/ryanpcmcquen/normalizeStuff.js/0c4040e3a3955ed579d8efbac7b388a3f80bcb70/normalizeStuff.min.js"></script>
+<script src="https://cdn.rawgit.com/ryanpcmcquen/normalizeStuff.js/3103a74bbab29d84506f1fd71afe0f7832d954ad/normalizeStuff.min.js"></script>
 ```
 
-https://cdn.rawgit.com/ryanpcmcquen/normalizeStuff.js/0c4040e3a3955ed579d8efbac7b388a3f80bcb70/normalizeStuff.min.js
+https://cdn.rawgit.com/ryanpcmcquen/normalizeStuff.js/3103a74bbab29d84506f1fd71afe0f7832d954ad/normalizeStuff.min.js
