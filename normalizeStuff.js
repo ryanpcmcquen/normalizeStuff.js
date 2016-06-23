@@ -1,17 +1,15 @@
-/* normalizeStuff.js v0.2.0 by ryanpcmcquen */
-
+/*! normalizeStuff.js v0.2.1 by ryanpcmcquen */
 /*jslint browser:true, white:true*/
 /*global window*/
-
 (function () {
 
-  'use strict';
+  "use strict";
 
-  var normalizeStuff;
+  var normalizeStuff = {};
 
   normalizeStuff.heights = function (elementSelector, height) {
-    var elementArray = Array.prototype.slice.call(document.querySelectorAll(elementSelector)),
-      maxElementHeight;
+    var elementArray = Array.prototype.slice.call(document.querySelectorAll(elementSelector));
+    var maxElementHeight;
     if (!height) {
       // no height was defined, calculate tallest height
       var elementHeightArray = [];
@@ -32,8 +30,8 @@
   };
 
   normalizeStuff.widths = function (elementSelector, width) {
-    var elementArray = Array.prototype.slice.call(document.querySelectorAll(elementSelector)),
-      maxElementWidth;
+    var elementArray = Array.prototype.slice.call(document.querySelectorAll(elementSelector));
+    var maxElementWidth;
     if (!width) {
       // no width was defined, calculate greatest width
       var elementWidthArray = [];
